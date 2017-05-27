@@ -1,0 +1,36 @@
+{
+  "name": "disk-calc",
+  "version": "0.0.0",
+  "description": "Hard disk calculation.",
+  "main": "index.js",
+  "bin": {
+    "disk-calc": "disk-calc.js"
+  },
+  "dependencies": {
+    "commander": "^2.9.0"
+  },
+  "devDependencies": {
+    "ava": "^0.19.1",
+    "coveralls": "^2.13.1",
+    "nyc": "^10.3.2",
+    "standard": "^10.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WindomZ/disk-calc.git"
+  },
+  "keywords": [
+    "disk",
+    "cale",
+    "calculation"
+  ],
+  "author": "WindomZ",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/WindomZ/disk-calc/issues"
+  },
+  "homepage": "https://github.com/WindomZ/disk-calc#readme"
+}
