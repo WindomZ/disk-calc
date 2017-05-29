@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Created by Windom on 2017/5/27.
+ * Created by WindomZ on 2017/5/27.
  */
 'use strict'
 
