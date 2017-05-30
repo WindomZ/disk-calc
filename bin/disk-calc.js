@@ -39,14 +39,20 @@ program
       process.stderr.write(util.format('ERROR DiskSize: "%j"', diskSize).red + os.EOL)
       return
     }
-    diskSize = sizes[0]
+    diskSize = parseFloat(sizes[0])
 
-    if (hideSize && hideSize <= 0) process.stderr.write(util.format('ERROR HideSize: "%j"', hideSize).red + os.EOL)
+    if (hideSize) {
+      if (hideSize < 0) {
+        process.stderr.write(util.format('ERROR HideSize: "%j"', hideSize).red + os.EOL)
+      }
+      hideSize = parseFloat(hideSize)
+    }
+    if (!hideSize) hideSize = 0
 
-    let nftsSize = calc('Windows', 'NFTS', parseFloat(diskSize), parseFloat(hideSize))
+    let nftsSize = calc('Windows', 'NFTS', diskSize, hideSize)
     process.stdout.write('NFTS format size: ' + (nftsSize + ' MB').green + os.EOL)
 
-    let fatSize = calc('Windows', 'FAT32', parseFloat(diskSize), parseFloat(hideSize))
+    let fatSize = calc('Windows', 'FAT32', diskSize, hideSize)
     process.stdout.write('FAT32 format size: ' + (fatSize + ' MB').green + os.EOL)
   })
 
