@@ -1,4 +1,6 @@
 /**
- * Created by Windom on 2017/5/28.
+ * Created by WindomZ on 2017/5/28.
  */
 'use strict'
+
+module.exports = require('./lib/calc')
