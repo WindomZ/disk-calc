@@ -1,0 +1,9 @@
+{
+  "usage": [
+    "When Windows is in the first area, it automatically creates an additional three hidden partitions.",
+    "So when calculating the first partition, you should first remove all hidden partitions.",
+    "Try to create a partition, get the total size of all hidden partitions.",
+    "Again delete all re-create, and then C drive partition size to carry the sum of the hidden partition size.",
+    "Other partition sizes do not need to carry the sum of the hidden partition sizes."
+  ]
+}
