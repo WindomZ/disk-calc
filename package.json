@@ -1,7 +1,7 @@
 {
   "name": "disk-calc",
-  "version": "0.0.0",
-  "description": "Hard disk calculation.",
+  "version": "1.0.1",
+  "description": "Hard disk calculation. Easy to calculate integer hard disk partition.",
   "main": "index.js",
   "bin": {
     "disk-calc": "disk-calc.js"
@@ -17,7 +17,8 @@
     "standard": "*"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "standard && nyc --reporter=lcov --reporter=text-lcov ava",
+    "testing": "standard && ava"
   },
   "repository": {
     "type": "git",
@@ -28,7 +29,7 @@
     "cale",
     "calculation"
   ],
-  "author": "WindomZ",
+  "author": "WindomZ <git.windomz@gmail.com>",
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/WindomZ/disk-calc/issues"

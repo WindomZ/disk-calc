@@ -4,3 +4,5 @@
 'use strict'
 
 module.exports = require('./lib/calc')
+
+module.exports.conv = require('./lib/conv')
