@@ -3,6 +3,7 @@
 [![Build Status](https://travis-ci.org/WindomZ/disk-calc.svg?branch=master)](https://travis-ci.org/WindomZ/disk-calc)
 [![License](https://img.shields.io/badge/license-Apache-green.svg)](https://www.apache.org/licenses/LICENSE-2.0.html)
 [![Dependency](https://david-dm.org/WindomZ/disk-calc.svg)](https://david-dm.org/WindomZ/disk-calc)
+[![Coverage Status](https://coveralls.io/repos/github/WindomZ/disk-calc/badge.svg?branch=dev)](https://coveralls.io/github/WindomZ/disk-calc?branch=dev)
 [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com/)
 
 > Hard disk calculation.
@@ -42,13 +43,13 @@ $ disk-calc -h
 ## Example
 
 ```bash
-$ disk-calc usage            # Display the program steps in English.
-$ disk-calc usage -c         # Display the program steps in Chinese.
-$ disk-calc windows 10       # Calculate the size of the 10G partition
-$ disk-calc windows 10g      # Calculate the size of the 10G partition
-$ disk-calc windows 10G      # Calculate the size of the 10G partition
-$ disk-calc windows 10GB     # Calculate the size of the 10G partition
-$ disk-calc windows 10 566M  # Calculate the size of the 10G partition + 566MB hidden partition sizes
+$ disk-calc usage             # Display the program steps in English.
+$ disk-calc usage -c          # Display the program steps in Chinese.
+$ disk-calc windows 10        # Calculate the size of the 10G partition
+$ disk-calc windows 10g       # Calculate the size of the 10G partition
+$ disk-calc windows 10G       # Calculate the size of the 10G partition
+$ disk-calc windows 10GB      # Calculate the size of the 10G partition
+$ disk-calc windows 10G 566M  # Calculate the size of the 10G partition + 566MB hidden partition sizes
 ```
 
 ## License
