@@ -53,7 +53,7 @@ program
     }
 
     try {
-      process.stdout.write('NFTS format size: ' + (calc('Windows', 'NFTS', diskSize, hideSize) + ' MB').green + os.EOL)
+      process.stdout.write('NTFS format size: ' + (calc('Windows', 'NTFS', diskSize, hideSize) + ' MB').green + os.EOL)
     } catch (e) {
       process.stderr.write(e.message.red + os.EOL)
       return
