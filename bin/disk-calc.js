@@ -12,6 +12,7 @@ const program = require('commander')
 
 const pkg = require('../package.json')
 const calc = require('../lib/calc')
+const conv = require('../lib/conv')
 
 let noArgs = true
 
@@ -31,29 +32,39 @@ program
 program
   .command('windows <disk_size> [hide_size]')
   .alias('win')
-  .action((diskSize = 0, hideSize = 0, options) => {
+  .action((diskSize, hideSize, options) => {
     noArgs = false
 
-    let sizes = diskSize.match(/[0-9.]+/i)
-    if (!sizes || sizes.length <= 0) {
-      process.stderr.write(util.format('ERROR DiskSize: "%j"', diskSize).red + os.EOL)
+    try {
+      diskSize = conv(diskSize)
+    } catch (e) {
+      process.stderr.write(util.format('ERROR: "%j"', e.message).red + os.EOL)
       return
     }
-    diskSize = parseFloat(sizes[0])
 
     if (hideSize) {
-      if (hideSize < 0) {
-        process.stderr.write(util.format('ERROR HideSize: "%j"', hideSize).red + os.EOL)
+      try {
+        hideSize = conv(hideSize)
+      } catch (e) {
+        process.stderr.write(util.format('ERROR: "%j"', e.message).red + os.EOL)
+        return
       }
-      hideSize = parseFloat(hideSize)
+    } else {
+      hideSize = 0
     }
-    if (!hideSize) hideSize = 0
 
-    let nftsSize = calc('Windows', 'NFTS', diskSize, hideSize)
-    process.stdout.write('NFTS format size: ' + (nftsSize + ' MB').green + os.EOL)
+    try {
+      process.stdout.write('NFTS format size: ' + (calc('Windows', 'NFTS', diskSize, hideSize) + ' MB').green + os.EOL)
+    } catch (e) {
+      process.stderr.write(util.format('ERROR: "%j"', e.message).red + os.EOL)
+      return
+    }
 
-    let fatSize = calc('Windows', 'FAT32', diskSize, hideSize)
-    process.stdout.write('FAT32 format size: ' + (fatSize + ' MB').green + os.EOL)
+    try {
+      process.stdout.write('NFTS format size: ' + (calc('Windows', 'FAT32', diskSize, hideSize) + ' MB').green + os.EOL)
+    } catch (e) {
+      process.stderr.write(util.format('ERROR: "%j"', e.message).red + os.EOL)
+    }
   })
 
 program.parse(process.argv)
