@@ -6,7 +6,8 @@
 [![Coverage Status](https://coveralls.io/repos/github/WindomZ/disk-calc/badge.svg?branch=dev)](https://coveralls.io/github/WindomZ/disk-calc?branch=dev)
 [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com/)
 
-> Hard disk calculation.
+> Hard disk calculation. 
+> Easy to calculate integer hard disk partition.
 
 [![NPM](https://nodei.co/npm/disk-calc.png)](https://nodei.co/npm/disk-calc/)
 
