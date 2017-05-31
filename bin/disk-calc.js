@@ -61,14 +61,16 @@ program
     }
 
     try {
-      process.stdout.write('NTFS format size: ' + (calc('Windows', 'NTFS', diskSize, hideSize) + ' MB').green + os.EOL)
+      process.stdout.write('NTFS format size: ' +
+        (calc('Windows', 'NTFS', diskSize, hideSize) + ' MB').green + os.EOL)
     } catch (e) {
       process.stderr.write(e.message.red + os.EOL)
       return
     }
 
     try {
-      process.stdout.write('FAT32 format size: ' + (calc('Windows', 'FAT32', diskSize, hideSize) + ' MB').green + os.EOL)
+      process.stdout.write('FAT32 format size: ' +
+        (calc('Windows', 'FAT32', diskSize, hideSize) + ' MB').green + os.EOL)
     } catch (e) {
       process.stderr.write(e.message.red + os.EOL)
     }
