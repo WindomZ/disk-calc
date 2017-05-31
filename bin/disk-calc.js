@@ -5,7 +5,6 @@
 'use strict'
 
 const os = require('os')
-const util = require('util')
 
 require('colors')
 const program = require('commander')
@@ -38,7 +37,7 @@ program
     try {
       diskSize = conv(diskSize)
     } catch (e) {
-      process.stderr.write(util.format('ERROR: "%j"', e.message).red + os.EOL)
+      process.stderr.write(e.message.red + os.EOL)
       return
     }
 
@@ -46,7 +45,7 @@ program
       try {
         hideSize = conv(hideSize)
       } catch (e) {
-        process.stderr.write(util.format('ERROR: "%j"', e.message).red + os.EOL)
+        process.stderr.write(e.message.red + os.EOL)
         return
       }
     } else {
@@ -56,14 +55,14 @@ program
     try {
       process.stdout.write('NFTS format size: ' + (calc('Windows', 'NFTS', diskSize, hideSize) + ' MB').green + os.EOL)
     } catch (e) {
-      process.stderr.write(util.format('ERROR: "%j"', e.message).red + os.EOL)
+      process.stderr.write(e.message.red + os.EOL)
       return
     }
 
     try {
-      process.stdout.write('NFTS format size: ' + (calc('Windows', 'FAT32', diskSize, hideSize) + ' MB').green + os.EOL)
+      process.stdout.write('FAT32 format size: ' + (calc('Windows', 'FAT32', diskSize, hideSize) + ' MB').green + os.EOL)
     } catch (e) {
-      process.stderr.write(util.format('ERROR: "%j"', e.message).red + os.EOL)
+      process.stderr.write(e.message.red + os.EOL)
     }
   })
 
