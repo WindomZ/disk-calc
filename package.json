@@ -1,7 +1,7 @@
 {
   "name": "disk-calc",
-  "version": "1.0.0",
-  "description": "Hard disk calculation.",
+  "version": "1.0.1",
+  "description": "Hard disk calculation. Easy to calculate integer hard disk partition.",
   "main": "index.js",
   "bin": {
     "disk-calc": "disk-calc.js"
