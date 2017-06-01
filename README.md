@@ -1,7 +1,6 @@
 # disk-calc
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/WindomZ/disk-calc.svg)](https://greenkeeper.io/)
-
 [![Build Status](https://travis-ci.org/WindomZ/disk-calc.svg?branch=master)](https://travis-ci.org/WindomZ/disk-calc)
 [![License](https://img.shields.io/badge/license-Apache-green.svg)](https://www.apache.org/licenses/LICENSE-2.0.html)
 [![Dependency](https://david-dm.org/WindomZ/disk-calc.svg)](https://david-dm.org/WindomZ/disk-calc)
@@ -9,6 +8,7 @@
 [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com/)
 
 > Hard disk calculation. 
+
 > Easy to calculate integer hard disk partition.
 
 [![NPM](https://nodei.co/npm/disk-calc.png)](https://nodei.co/npm/disk-calc/)
