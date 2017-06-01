@@ -5,7 +5,7 @@
   "preferGlobal": true,
   "main": "index.js",
   "bin": {
-    "disk-calc": "disk-calc.js"
+    "disk-calc": "bin/disk-calc.js"
   },
   "dependencies": {
     "colors": "^1.1.2",

@@ -9,14 +9,16 @@ const os = require('os')
 require('colors')
 const program = require('commander')
 
+const pkg = require('../package.json')
+
 const calc = require('../lib/calc')
 const conv = require('../lib/conv')
 
 let noArgs = true
 
 program
-  .version(require('../package.json').version)
-  .description('Hard disk calculation.')
+  .version(pkg.version)
+  .description(pkg.description)
 
 program
   .command('usage')
