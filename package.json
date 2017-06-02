@@ -14,7 +14,7 @@
   "devDependencies": {
     "ava": "^0.19.1",
     "coveralls": "^2.13.1",
-    "nyc": "^10.3.2",
+    "nyc": "^11.0.0",
     "standard": "*"
   },
   "scripts": {
