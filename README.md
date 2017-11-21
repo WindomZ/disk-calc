@@ -6,6 +6,7 @@
 [![Dependency](https://david-dm.org/WindomZ/disk-calc.svg)](https://david-dm.org/WindomZ/disk-calc)
 [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FWindomZ%2Fdisk-calc.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FWindomZ%2Fdisk-calc?ref=badge_shield)
 
 > Hard disk calculation. 
 
@@ -58,3 +59,6 @@ disk-calc windows 10G 566M  # Calculate the size of the 10G partition + 566MB hi
 ## License
 
 The [MIT License](https://github.com/WindomZ/disk-calc/blob/master/LICENSE)
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FWindomZ%2Fdisk-calc.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FWindomZ%2Fdisk-calc?ref=badge_large)
