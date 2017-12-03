@@ -12,13 +12,13 @@
   },
   "dependencies": {
     "colors": "^1.1.2",
-    "commander": "^2.9.0"
+    "commander": "^2.12.2"
   },
   "devDependencies": {
     "ava": "^0.24.0",
     "coveralls": "^3.0.0",
-    "nyc": "^11.0.0",
-    "standard": "*"
+    "nyc": "^11.3.0",
+    "standard": "^10.0.3"
   },
   "scripts": {
     "test": "standard && nyc --reporter=lcov --reporter=text-lcov ava",
