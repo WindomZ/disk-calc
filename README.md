@@ -1,4 +1,14 @@
-# disk-calc
+```
+
+ _______   __       _______. __  ___          ______     ___       __        ______ 
+|       \ |  |     /       ||  |/  /         /      |   /   \     |  |      /      |
+|  .--.  ||  |    |   (----`|  '  /   ______|  ,----'  /  ^  \    |  |     |  ,----'
+|  |  |  ||  |     \   \    |    <   |______|  |      /  /_\  \   |  |     |  |     
+|  '--'  ||  | .----)   |   |  .  \         |  `----./  _____  \  |  `----.|  `----.
+|_______/ |__| |_______/    |__|\__\         \______/__/     \__\ |_______| \______|
+                                                                                    
+
+```
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/WindomZ/disk-calc.svg)](https://greenkeeper.io/)
 [![Build Status](https://travis-ci.org/WindomZ/disk-calc.svg?branch=master)](https://travis-ci.org/WindomZ/disk-calc)
@@ -44,7 +54,7 @@ $ disk-calc -h
     -V, --version  output the version number
 ```
 
-## Example
+## Examples
 
 ```bash
 disk-calc usage             # Display the program steps in English.
@@ -56,9 +66,15 @@ disk-calc windows 10GB      # Calculate the size of the 10G partition
 disk-calc windows 10G 566M  # Calculate the size of the 10G partition + 566MB hidden partition sizes
 ```
 
+## Contributing
+
+Welcome to pull requests, report bugs, suggest ideas and discuss **disk-calc**, 
+i would love to hear what you think about **disk-calc** on [issues page](https://github.com/WindomZ/disk-calc/issues).
+
+If you like it then you can put a :star: on it.
+
 ## License
 
-The [MIT License](https://github.com/WindomZ/disk-calc/blob/master/LICENSE)
-
+[MIT](https://github.com/WindomZ/disk-calc/blob/master/LICENSE)
 
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FWindomZ%2Fdisk-calc.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FWindomZ%2Fdisk-calc?ref=badge_large)
