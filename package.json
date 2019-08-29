@@ -18,7 +18,7 @@
     "ava": "^2.0.0",
     "coveralls": "^3.0.2",
     "nyc": "^14.0.0",
-    "standard": "^14.0.0"
+    "standard": "^14.1.0"
   },
   "scripts": {
     "test": "standard && nyc --reporter=lcov --reporter=text-lcov ava",
